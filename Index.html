@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+<head>
+  <title>Decodificador de Texto</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Styles/style.css" />
+
+</head>
+
+<body>
+
+  <header>
+    <img src="./Assets/images/Vector.png" alt="Logo Alura"/>
+  </header>
+
+  <main class="container-principal">
+    <section class="conteudo-principal">
+      <textarea class="text-in" placeholder="Digite seu texto..." cols="40" rows="13"></textarea>
+      
+      <p>
+        <span>
+          <img src="./Assets/Icons/Vector.png" alt="Alerta" width="10px" height="10px"/>
+        </span>
+        <span class="info" style="font-size: 12px">Apenas letras minúsculas e sem acento !</span>
+      </p>
+      
+      <div class="buttons">
+        <button class="button-cript" type="button" onclick="encrypt()">Criptografar</button>
+        <button class="button-decript" type="button" onclick="unecrypt()">Descriptografar</button>
+      </div>
+    </section>
+
+    <div class="display-text fade-in">
+      <div class="text-result">
+        <img class="image-conntent" src="./Assets/images/High quality products 1 1.png" alt="Menssagem Inválida"/>
+        <h3 class="content-nomsg">Nenhuma menssagem encontrada</h3>
+        <p class="text-inmsg">Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">      
+        <img class="img-footer" src="./Assets/images/Vector.png" alt="Logo Alura"/>
+        <p class="footer-text">Desenvolvido Por Vitor Santna - Treinamento ALURA 2024</p>
+  </footer>
+
+  <script src="./Scripts/script.js"></script>
+
+</body>
+
+</html>

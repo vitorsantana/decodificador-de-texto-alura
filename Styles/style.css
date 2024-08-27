@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*inicio do codigo */
+
+:root {
+  --black: #000000;
+  --white: #ffff;
+  --light-blue: #F3F5FC;
+  --gray-100: #CED4DA;
+  --gray-200: #ADB5BD;
+  --gray-300: #868E96;
+  --gray-400: #495057;
+  --gray-500: #343A40;
+  --transparency: rgba(0, 0, 0, 0.03);
+  --dark-blue-100: #609ED4;
+  --dark-blue-200: #356EA9;
+  --dark-blue-300: #0A3871;
+  --dark-blue-400: #072B61;
+  --dark-blue-500: #052051;
+  --redalert: red;
+}
+  /* 
+  No figma do projeto as cores gray 300 esta com o nome gray 500 duplicado . 
+  A cor dark blue 500 estava com o nome de drak blue 400 duplicado-->
+*/
+
+
+ *{
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-blue);
+}
+
+header {
+  padding: 3vh 3vw;
+}
+
+
+::selection {
+  background-color: var(--dark-blue-300);
+  color: var(--white);
+}
+
+.container-principal {
+  margin: 0 auto;
+  padding: 2vh 3vw 8vh 14vh;
+  max-width: 1440px;
+  height: 85vh;
+  display: flex;
+  box-sizing: content-box;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  grid-template-columns: 2fr 1.2fr;
+  
+}
+
+.text-in {
+  resize: none;
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  width: 90%;
+  background-color: white;
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--dark-blue-300);
+  height: 100%;
+  padding: 25px;
+}
+
+.text-in:focus {
+  background-color: var(--transparency);
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: 1px solid var(--dark-blue-300);
+  border-radius: 32px;
+}
+
+.text-in:hover {
+  background-color: var(--transparency);
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: 1px solid var(--dark-blue-300);
+  border-radius: 32px;
+}
+
+.buttons {
+  display: flex;
+  padding: 10px 0;
+  gap: 3%;
+}
+
+.button-cript {
+  width: 337px;
+  height: 67px;
+  border-style: hidden;
+  border-radius: 24px;
+  font-weight: 450;
+  cursor: pointer;
+  background-color: var(--dark-blue-300);
+  color: var(--white);
+}
+
+.button-decript {
+  width: 337px;
+  height: 67px;
+  border-style: hidden;
+  border-radius: 24px;
+  font-weight: 450;
+  cursor: pointer;
+  border: solid var(--dark-blue-300) 1px;
+  background-color: var(--gray-100);
+  color: var(--dark-blue-300);
+}
+
+.btn-acao-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 86%;
+  width: 80%;
+}
+
+.button-copy {
+  width: 337px;
+  height: 67px;
+  border-style: hidden;
+  border-radius: 24px;
+  font-weight: 450;
+  cursor: pointer;
+  border: solid var(--dark-blue-300) 1px;
+  background-color: var(--light-blue-100);
+  color: var(--dark-blue-300);
+}
+
+.button-copy:hover {
+  color: var(--cor-principal);
+}
+
+.display-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 32px;
+  background-color: var(--white);
+  padding: 100px 25px;
+  width: 32%;
+  box-sizing: border-box;
+  height: 90vh;
+  position: absolute;
+  bottom: 5vh;
+  left: 72vw;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  align-items: center;
+  width: 25vw;
+}
+
+.text-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.menssagem {
+  padding: 25px;
+  word-break: break-all;
+  text-align: center;
+  width: 100%;
+  height: 83%;
+  border: none;
+  resize: none;
+}
+
+.content-nomsg{
+  font-size: 24px;
+  color: var(--gray-500);
+  font-family: 'inter';
+  font-style: bold;
+
+}
+
+
+.text-inmsg{
+  font-size: 16px;
+  color: var(--gray-400) ;
+  font-family: 'Inter';
+  text-align: center;
+  align-items: center;
+  line-height: 150%;
+}
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-blue-500);
+}
+
+.img-footer{
+  height: 24px;
+  width: 24px; 
+  margin: 10px;
+}
+
+.footer-text {
+  text-align: center;
+  font-weight: 24PX;
+  color:var(--gray-100);
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.75s ease-in forwards;
+}
+
+@keyframes pulseRed {
+  0%,
+  100% {
+    color: var(--black) }
+  50% {
+    color: var(--redalert);}
+  }
+
+.alert {
+  animation: pulseRed 1.5s infinite;
+}
+
+@media (max-width: 780px) {
+  .container-principal {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .display-text {
+    width: 90%;
+    height: 90%;
+  }
+
+  .image-conntent {
+    display: none;
+  }
+}
