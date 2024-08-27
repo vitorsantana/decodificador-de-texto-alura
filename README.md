@@ -7,7 +7,7 @@
 </p> 
 
 Este repositório git hub contem os arquivos do projeto final do treinamento ALURA de 2024!
-Este projeto surgiu a partir do projeto final do treinamento Alura ONE (Oracle Next Education), onde precisamos criar um sistema para Criptograva e descriptografar palavras. Usamos uma boa combinação de tecnologias para desenvolvimento, incluindo HTML, CSS e JavaScript.
+Este sistema surgiu a partir do projeto final do treinamento Alura ONE (Oracle Next Education), onde precisamos criar um sistema para Criptograva e descriptografar palavras. Usamos uma boa combinação de tecnologias para desenvolvimento, incluindo HTML, CSS e JavaScript.
 O objetivo principal é  aplicar todos os conhecimentos adquiridos durante o treinamento .
 
 <h2>
